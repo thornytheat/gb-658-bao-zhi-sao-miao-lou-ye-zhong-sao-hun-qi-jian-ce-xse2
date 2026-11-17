@@ -1,0 +1,9 @@
+issue,edition,page,file_name,sha256,phash,clarity,header_issue
+2026-11-01,01,001,scan_001.tif,aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,0f0f,90,2026-11-01
+2026-11-01,01,002,scan_002_old.tif,bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,0f1f,71,2026-11-01
+2026-11-01,01,002,scan_002_new.tif,cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc,0f1e,94,2026-11-01
+issue,edition,page,file_name,sha256,phash,clarity,header_issue
+2026-11-01,01,004,scan_004.tif,dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd,ffff,84,2026-11-02
+2026-11-01,S1,001,supp_001.tif,eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee,00ff,88,2026-11-01
+2026-11-02,01,001,scan_copy.tif,aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,0f0f,82,2026-11-02
+

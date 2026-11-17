@@ -1,0 +1,8 @@
+:root {
+  --bg: #f3eadb; --rail: #2f241d; --panel: #fffdf7; --panel-2: #f7eedf;
+  --panel-3: #ead8bb; --line: #c8ad86; --line-2: #82694d; --ink: #2b211b;
+  --ink-2: #5e4a3d; --ink-3: #8d796c; --accent: #b45309; --accent-ink: #fffaf0;
+  --accent-soft: #f7d9a8; --ok: #28764b; --warn: #a16207; --bad: #a3342f;
+  --info: #506784; --ui: Georgia, "Songti SC", serif; --mono: "SFMono-Regular", Consolas, monospace;
+  --radius: 0px; --radius-sm: 0px; --row: 31px; --gap: 10px; --pad: 14px; --bar: 48px; --dur: 90ms;
+}
