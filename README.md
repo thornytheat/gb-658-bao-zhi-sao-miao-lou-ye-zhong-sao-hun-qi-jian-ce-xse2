@@ -16,8 +16,11 @@ docker compose up --build
 - M4 重扫判定：页面 /rescans，接口 /api/rescans/evaluate
 - M5 混期归因：页面 /mixed，接口 /api/mixed/evaluate
 - M6 批次对账：页面 /batches，接口 /api/reconcile
+- M7 结算补扣：页面 /settle，接口 /api/settle/statements（结算/回读）、/sign（签收）、/corrections（更正）
 
 ## 运行规则
 
 同一输入内容生成相同运行标识，重复执行复用已有批次。隔离记录包含原因码、原始行号与原值；业务导出只保留一份证据清单。
+
+结算按站点约定单价与采纳页生成结算单，重复扫描与未裁决件不计费。签收后结算单冻结为付款凭据，复核更正另记补扣差额，旧单与原依据保留；更正携带基准版本，过期拒绝；差额两段落账，中断恢复、重试均不重复补扣；对账核对原付、调整与当前应付。不做实际付款。
 

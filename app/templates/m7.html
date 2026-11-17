@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="kpis">
+  <div class="kpi"><b>结算单</b><strong>1</strong><small>张</small></div>
+  <div class="kpi"><b>已签收</b><strong>1</strong><small>张</small></div>
+  <div class="kpi"><b>补扣调整</b><strong>2</strong><small>笔</small></div>
+  <div class="kpi"><b>暂挂</b><strong>1</strong><small>件</small></div>
+</section>
+<div class="grid grid--receipt">
+  <section class="panel">
+    <div class="panel__head"><h2>结算补扣</h2><span class="state state--ok">守恒</span></div>
+    <div class="panel__body panel__body--scroll">
+      <table class="ledger"><thead><tr><th>序号</th><th>业务键</th><th>状态</th><th class="num">值</th></tr></thead>
+      <tbody>{% for row in rows %}<tr><td class="num">{{ loop.index }}</td><td>{{ row.key }}</td><td>{{ row.status }}</td><td class="num">{{ row.value }}</td></tr>{% endfor %}</tbody></table>
+    </div>
+  </section>
+  <section class="panel panel--evidence">
+    <div class="panel__head"><h2>证据</h2><span class="panel__meta">2 笔</span></div>
+    <div class="panel__body"><div class="evidence"><b>ST-DEMO</b><span>VERSION 4</span><code>/api/settle/demo</code></div><pre id="result">等待运行</pre></div>
+  </section>
+  <section class="panel panel--status">
+    <div class="panel__head"><h2>对账</h2><span class="panel__meta">原付+调整=应付</span></div>
+    <div class="panel__body"><div class="bar"><i style="width:90%"></i></div><div class="legend"><span>原付 0.90</span><span>调整 0.00</span></div></div>
+  </section>
+</div>
+{% endblock %}

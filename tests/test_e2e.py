@@ -4,7 +4,7 @@ from app.main import app
 
 def test_all_module_pages_accessible():
     client = TestClient(app)
-    for path in ("/intake", "/issues", "/pages", "/rescans", "/mixed", "/batches"):
+    for path in ("/intake", "/issues", "/pages", "/rescans", "/mixed", "/batches", "/settle"):
         response = client.get(path)
         assert response.status_code == 200 and "panel" in response.text
 
